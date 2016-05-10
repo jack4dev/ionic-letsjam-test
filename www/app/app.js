@@ -25,11 +25,27 @@ angular.module('eliteApp', ['ionic'])
         }
       }
     })
-    .state('home.myteams', {
-      url: '/myteams',
+    .state('home.mygroups', {
+      url: '/mygroups',
       views: {
-        'tab-myteams': {
-          templateUrl: 'app/home/myteams.html'
+        'tab-mygroups': {
+          templateUrl: 'app/home/mygroups.html'
+        }
+      }
+    })
+    .state('home.myevents', {
+      url: '/myevents',
+      views: {
+        'tab-myevents': {
+          templateUrl: 'app/home/myevents.html'
+        }
+      }
+    })
+    .state('home.discover', {
+      url: '/discover',
+      views: {
+        'tab-discover': {
+          templateUrl: 'app/home/discover.html'
         }
       }
     })

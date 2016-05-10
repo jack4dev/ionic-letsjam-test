@@ -1,12 +1,22 @@
-<ion-nav-bar class="bar-balanced">
-  <ion-nav-title>Elite Schedule</ion-nav-title>
+<ion-nav-bar class="bar-header">
+  <ion-nav-title>
+    <img class="logo" src="img/logo-black.png"/>
+  </ion-nav-title>
+
 </ion-nav-bar>
 
 <ion-tabs class="tabs-energized tabs-icon-top">
-  <ion-tab title="Leagues" icon="ion-home" ui-sref="home.leagues">
+  <ion-tab title="Musicians" icon="ion-person" ui-sref="home.leagues">
     <ion-nav-view name="tab-leagues"></ion-nav-view>
   </ion-tab>
-  <ion-tab title="My Teams" icon="ion-star" ui-sref="home.myteams">
-    <ion-nav-view name="tab-myteams"></ion-nav-view>
+  <ion-tab title="Groups" icon="ion-person-stalker" ui-sref="home.mygroups">
+    <ion-nav-view name="tab-mygroups"></ion-nav-view>
   </ion-tab>
+  <ion-tab title="Events" icon="ion-calendar" ui-sref="home.myevents">
+    <ion-nav-view name="tab-myevents"></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="Explore" icon="ion-earth" ui-sref="home.discover">
+    <ion-nav-view name="tab-discover"></ion-nav-view>
+  </ion-tab>
+
 </ion-tabs>
